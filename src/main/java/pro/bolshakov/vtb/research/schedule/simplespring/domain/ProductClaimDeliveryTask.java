@@ -47,6 +47,10 @@ public class ProductClaimDeliveryTask {
         return lastChange;
     }
 
+    public boolean isDelivered(){
+        return DeliveryStatus.DELIVERED.equals(status);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
